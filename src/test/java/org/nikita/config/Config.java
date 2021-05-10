@@ -22,9 +22,7 @@ public class Config {
                 String value = properties.getProperty(key);
 
                 if (value.startsWith("$")) {
-                    System.out.println(">>> Env variable found: " + key + " " + value.substring(1) + " " + System.getenv(value.substring(1)));
-
-                    properties.setProperty(key, System.getenv(value));
+                    properties.setProperty(key, System.getenv(value.substring(1)));
                 }
             }
         } catch (IOException err) {

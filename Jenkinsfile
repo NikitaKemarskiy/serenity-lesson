@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     tools {
-        maven "M3"
+        maven "Maven 3.6.3"
     }
 
     stages {
         stage('Testing') {
             steps {
-                sh "mvn verify"
+                sh "mvn test"
             }
 
             post {

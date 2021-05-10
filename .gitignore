@@ -6,8 +6,6 @@
 .idea/
 target/
 
-config.properties
-
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml

@@ -13,8 +13,6 @@ pipeline {
     stages {
         stage('Testing') {
             steps {
-                sh "echo \">>> API BASE URL: $API_BASE_URL\""
-                sh "echo \">>> API KEY: $API_KEY\""
                 sh "mvn test"
             }
 
